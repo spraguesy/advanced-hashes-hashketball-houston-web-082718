@@ -121,7 +121,7 @@ end
 def num_points_scored(name)
   game_hash.each do |game, team|
     puts team
-  end 
+  end
 end
 
 num_points_scored("Jason Terry")
