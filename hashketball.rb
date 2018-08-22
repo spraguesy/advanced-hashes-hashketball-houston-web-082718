@@ -124,6 +124,7 @@ def num_points_scored(name)
     puts name
     team.each do |category, info|
       if category == :players
+        binding.pry
         info.each do |players_name, stats|
           puts stats
         end
@@ -132,4 +133,4 @@ def num_points_scored(name)
   end
 end
 
-num_points_scored("Jason Terry")
+num_points_scored("Jeff Adrien")
