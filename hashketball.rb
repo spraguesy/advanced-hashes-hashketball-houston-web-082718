@@ -123,8 +123,9 @@ def num_points_scored(name)
     team.each do |category, info|
       if category == :players
         info.each do |players_name, stats|
-          puts name
-          puts players_name
+          if players_name == name
+            puts true
+          end
         end
       end
     end
