@@ -121,11 +121,7 @@ end
 def num_points_scored(name)
   game_hash.each do |game, team|
     team.each do |category, info|
-      info.each do |sub_cat, data|
-        if sub_cat == :players
-          puts data
-        end
-      end
+      puts category
     end
   end
 end
