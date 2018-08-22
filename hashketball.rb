@@ -122,7 +122,9 @@ def num_points_scored(name)
   game_hash.each do |game, team|
     team.each do |category, info|
       if category == :players
-        puts info
+        info.each do |name, stats|
+          puts name
+        end
       end
     end
   end
